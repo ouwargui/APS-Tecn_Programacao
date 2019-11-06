@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1572991526 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\banco.c
+
+1572991549 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\cliente.c
+
+1572991566 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\conta.c
+
+1572993215 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\gerenciaclientes.c
+	"gerenciaClientes.h"
+	<stdio.h>
+
+1572993021 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\gerenciaclientes.h
+	"cliente.h"
+
+1572993053 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\cliente.h
+
+1572993111 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecninas\apstecnicasforreal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"gerenciaClientes.h"
+

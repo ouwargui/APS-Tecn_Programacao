@@ -16,7 +16,7 @@ void adicionarCliente(TCliente *cliente){
     fflush(stdin);
     strcpy(cliente[totalClientes].cpf, cpfTemp);
 
-    while(existeCPF(cliente[totalClientes].cpf == 1)){
+    while(existeCPF(cliente[totalClientes].cpf) == 1){
         printf("Este CPF já existe.\n");
         printf("Digite seu CPF: \n");
         gets(cpfTemp);
@@ -35,15 +35,16 @@ void adicionarCliente(TCliente *cliente){
 }
 
 int existeCPF(TCliente *cliente){
-    int existe = 0, comparacao;
+    int existe = 0;
     for(int j = 0; j < totalClientes; j++){
-        if(strcmp(cliente, clientes[j].cpf) == 1){
-            existe = 1;
+        if(strcmp(cliente, clientes[j].cpf) == 0){
+             existe = 1;
             break;
         }
     }
     return existe;
 }
+
 
 char* listarClientes(){
     if(totalClientes == 0){

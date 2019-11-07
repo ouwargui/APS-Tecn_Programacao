@@ -27,7 +27,7 @@
 1573082986 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.c
 	"conta.h"
 
-1573081791 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\main.c
+1573162817 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\main.c
 	<stdlib.h>
 	<stdio.h>
 	"banco.h"
@@ -41,10 +41,11 @@
 
 1573080796 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\cliente.h
 
-1573084791 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.h
+1573163173 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.h
 	"cliente.h"
+	<locale.h>
 
-1573084446 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.c
+1573162536 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.c
 	"gerenciaClientes.h"
 	<stdio.h>
 	<string.h>

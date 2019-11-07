@@ -15,12 +15,14 @@ void adicionarCliente(TCliente *cliente){
     gets(cpfTemp);
     fflush(stdin);
     strcpy(cliente[totalClientes].cpf, cpfTemp);
-    while(existeCPF(&cliente) == 1){
+
+    while(existeCPF(cliente[totalClientes].cpf) == 0){
         printf("Este CPF já existe.\n");
         printf("Digite seu CPF: \n");
         gets(cpfTemp);
         strcpy(cliente[totalClientes].cpf, cpfTemp);
     }
+
     printf("Digite seu telefone: ");
     gets(telefoneTemp);
     fflush(stdin);
@@ -33,25 +35,26 @@ void adicionarCliente(TCliente *cliente){
 }
 
 int existeCPF(TCliente *cliente){
-    int existe = 0;
+    int existe = 0, comparacao;
     for(int j = 0; j < totalClientes; j++){
-        if(strcmp(cliente[totalClientes].cpf, clientes[j].cpf) == 0){
+        if(strcmp(cliente, clientes[j].cpf)){
             existe = 1;
-        }
-        else{
-            existe = 0;
         }
     }
     return existe;
 }
 
 char* listarClientes(){
-    for(int a = 0; a < totalClientes; a++){
-        printf("===== %i =====\n", a);
-        printf("nome - %s \n", clientes[a].nome);
-        printf("CPF: %s\n", clientes[a].cpf);
-        printf("Telefone: %s\n", clientes[a].telefone);
-        printf("===============\n", a);
+    if(totalClientes == 0){
+        printf("Não existem clientes cadastrados.\n\n");
+    }else{
+        for(int a = 0; a < totalClientes; a++){
+            printf("\n\n\n======= %i =======\n", a);
+            printf("nome - %s \n", clientes[a].nome);
+            printf("CPF: %s\n", clientes[a].cpf);
+            printf("Telefone: %s\n", clientes[a].telefone);
+            printf("=================\n\n\n", a);
+        }
     }
     return clientes;
 }

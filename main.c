@@ -18,6 +18,7 @@ void menuPrincipal(){
 }
 
 int main(){
+    setlocale(LC_CTYPE, "Portuguese");
     int escolha = 0;
 
     while(escolha != 9){

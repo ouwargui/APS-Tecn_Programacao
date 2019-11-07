@@ -1,7 +1,8 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "banco.h"
 #include "gerenciaClientes.h"
+
 
 void menuPrincipal(){
     printf("=== Menu do Banco ===\n");
@@ -25,12 +26,13 @@ int main(){
 
         switch(escolha){
             case 1:
-                adicionarCliente(clientes[totalClientes]);
-                printf("%c", clientes[0].nome);
+                adicionarCliente(&clientes[totalClientes]);
                 break;
             case 2:
+                adicionarConta(&contas[numeroConta]);
                 break;
             case 3:
+                listarClientes();
                 break;
             case 4:
                 break;

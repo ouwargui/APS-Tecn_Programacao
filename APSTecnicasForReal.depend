@@ -19,3 +19,33 @@
 	<stdlib.h>
 	"gerenciaClientes.h"
 
+1573082295 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.c
+	"banco.h"
+
+1572991549 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\cliente.c
+
+1573082986 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.c
+	"conta.h"
+
+1573081791 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\main.c
+	<stdlib.h>
+	<stdio.h>
+	"banco.h"
+	"gerenciaClientes.h"
+
+1573081341 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.h
+	"conta.h"
+
+1573082295 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.h
+	"cliente.h"
+
+1573080796 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\cliente.h
+
+1573084791 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.h
+	"cliente.h"
+
+1573084446 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.c
+	"gerenciaClientes.h"
+	<stdio.h>
+	<string.h>
+

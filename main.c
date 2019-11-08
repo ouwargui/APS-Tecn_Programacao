@@ -34,6 +34,7 @@ int main(){
                 break;
             case 3:
                 listarClientes();
+                printf("Conta cadastrada com sucesso!\n\n\n");
                 break;
             case 4:
                 break;

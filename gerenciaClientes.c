@@ -17,8 +17,8 @@ void adicionarCliente(TCliente *cliente){
     strcpy(cliente[totalClientes].cpf, cpfTemp);
 
     while(existeCPF(cliente[totalClientes].cpf) == 1){
-        printf("Este CPF já existe.\n");
-        printf("Digite seu CPF: \n");
+        printf("Já existe um cliente cadastrado com este CPF.\n\n");
+        printf("Digite outro CPF: \n");
         gets(cpfTemp);
         strcpy(cliente[totalClientes].cpf, cpfTemp);
     }
@@ -51,7 +51,7 @@ char* listarClientes(){
         printf("Não existem clientes cadastrados.\n\n");
     }else{
         for(int a = 0; a < totalClientes; a++){
-            printf("\n\n\n======= %i =======\n", a);
+            printf("\n\n\n======= %i =======\n", (a + 1));
             printf("nome - %s \n", clientes[a].nome);
             printf("CPF: %s\n", clientes[a].cpf);
             printf("Telefone: %s\n", clientes[a].telefone);

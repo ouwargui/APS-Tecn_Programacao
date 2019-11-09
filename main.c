@@ -28,13 +28,15 @@ int main(){
         switch(escolha){
             case 1:
                 adicionarCliente(&clientes[totalClientes]);
+                listarClientes();
+                printf("\n");
                 break;
             case 2:
                 adicionarConta(&contas[numeroConta]);
+                printf("Conta Nº %i cadastrada com sucesso!\n\n\n", numeroConta);
                 break;
             case 3:
-                listarClientes();
-                printf("Conta cadastrada com sucesso!\n\n\n");
+
                 break;
             case 4:
                 break;

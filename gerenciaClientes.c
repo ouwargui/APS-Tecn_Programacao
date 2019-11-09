@@ -51,11 +51,11 @@ char* listarClientes(){
         printf("Não existem clientes cadastrados.\n\n");
     }else{
         for(int a = 0; a < totalClientes; a++){
-            printf("\n\n\n======= %i =======\n", (a + 1));
+            printf("\n======= %i =======\n", (a + 1));
             printf("nome - %s \n", clientes[a].nome);
             printf("CPF: %s\n", clientes[a].cpf);
             printf("Telefone: %s\n", clientes[a].telefone);
-            printf("=================\n\n\n", a);
+            printf("=================\n", a);
         }
     }
     return clientes;

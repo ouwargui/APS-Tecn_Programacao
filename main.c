@@ -5,6 +5,7 @@
 
 //OI JULIA SOU EU O GUILHERME CARAIIIIIII ALEK PARA DE RIR PORRA CARAIIII
 
+
 void menuPrincipal(){
     printf("=== Menu do Banco ===\n");
     printf("1 - Cadastrar Cliente\n");
@@ -28,7 +29,7 @@ int main(){
 
         switch(escolha){
             case 1:
-                printf("\n%i\n", totalClientes);
+                //printf("\n%i\n", totalClientes);
                 adicionarCliente(&clientes[totalClientes]);
                 listarClientes();
                 printf("\n");
@@ -52,6 +53,7 @@ int main(){
             case 7:
                 break;
             case 8:
+                removerConta(&contas[numeroConta]);
                 break;
         }
     }
@@ -99,7 +101,7 @@ void adicionarCliente(TCliente *cliente){
 
     fflush(stdin);
     printf("Cliente cadastrado com sucesso!\n\n");
-    printf("nome: %s \n", cliente[totalClientes].nome);
+    printf("Nome: %s \n", cliente[totalClientes].nome);
     printf("CPF: %s \n", cliente[totalClientes].cpf);
     printf("Telefone: %s \n", cliente[totalClientes].telefone);
     totalClientes++;
@@ -122,8 +124,8 @@ char* listarClientes(){
         printf("Não existem clientes cadastrados.\n\n");
     }else{
         for(int a = 0; a < 10; a++){
-            printf("%i", totalClientes);
-            printf("nome: %s \n", clientes[a].nome);
+            printf("%i \n" , (a + 1));
+            printf("Nome: %s \n", clientes[a].nome);
             printf("CPF: %s \n", clientes[a].cpf);
             printf("Telefone: %s \n", clientes[a].telefone);
             printf("=================\n");
@@ -233,5 +235,25 @@ char* pesquisarConta(int numero){
 TConta getConta(int numero){
 }
 int removerConta(int numero){
-}
+    int remover = 0, i = 0;
+    printf("Insira o numero da conta que desja excluir \n");
+    scanf("%i", &numero);
+        if (contas[numeroConta].saldo == 0);{
+            for(int b = numero;b < totalClientes; b++){
+                clientes[b] = clientes[b + 1];
+                i--;
+                remover = 1;
+                break;
+            }
+        }
+        /*else{
+            printf("Para remover uma conta é necessário que ela esteja com o saldo zerado!\n");
+        }*/
+
+        return remover;
+        }
+
+
+
+
 

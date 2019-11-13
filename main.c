@@ -3,8 +3,6 @@
 #include "banco.h"
 #include <locale.h>
 
-//OI JULIA SOU EU O GUILHERME CARAIIIIIII ALEK PARA DE RIR PORRA CARAIIII
-
 void menuPrincipal(){
     printf("=== Menu do Banco ===\n");
     printf("1 - Cadastrar Cliente\n");
@@ -51,6 +49,7 @@ int main(){
             case 7:
                 break;
             case 8:
+                removerConta(&contas[numeroConta]);
                 break;
         }
     }
@@ -118,11 +117,11 @@ char* listarClientes(){
         printf("Não existem clientes cadastrados.\n\n");
     }else{
         for(int a = 0; a < totalClientes; a++){
-            printf("======== %i ========\n", (a + 1));
-            printf("nome: %s \n", clientes[a].nome);
+            printf("========= %i =========\n" , (a + 1));
+            printf("Nome: %s \n", clientes[a].nome);
             printf("CPF: %s \n", clientes[a].cpf);
             printf("Telefone: %s \n", clientes[a].telefone);
-            printf("===================\n");
+            printf("=====================\n");
         }
     }
     return clientes;
@@ -179,7 +178,7 @@ void adicionarConta(TConta *conta){
     fflush(stdin);
 
     conta[numeroConta].cliente = clientes[numTemp];
-    conta[numeroConta].saldo = 1000;
+    conta[numeroConta].saldo = 0;
     conta[numeroConta].ativa = 1;
     numeroConta++;
 }
@@ -229,5 +228,23 @@ char* pesquisarConta(int numero){
 TConta getConta(int numero){
 }
 int removerConta(int numero){
-}
+    int remover = 0, i = 0;
+    printf("Insira o numero da conta que desja excluir \n");
+    scanf("%i", &numero);
+        if(contas[numero].saldo == 0);{
+            for(int b = numero;b < totalClientes; b++){
+                clientes[b] = clientes[b + 1];
+                i--;
+                remover = 1;
+                break;
+            }
+        }
+
+
+        return remover;
+        }
+
+
+
+
 

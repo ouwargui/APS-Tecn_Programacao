@@ -54,3 +54,20 @@
 	<stdio.h>
 	<string.h>
 
+1573615411 source:d:\code blocks c\aps\apstecnicasforreal\main.c
+	<stdlib.h>
+	<stdio.h>
+	"banco.h"
+	<locale.h>
+
+1573613762 d:\code blocks c\aps\apstecnicasforreal\banco.h
+	"conta.h"
+
+1573613762 d:\code blocks c\aps\apstecnicasforreal\conta.h
+	"gerenciaClientes.h"
+
+1573613762 d:\code blocks c\aps\apstecnicasforreal\gerenciaclientes.h
+	"cliente.h"
+
+1573613762 d:\code blocks c\aps\apstecnicasforreal\cliente.h
+

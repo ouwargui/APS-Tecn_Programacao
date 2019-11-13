@@ -7,7 +7,5 @@ char cpf[15];
 char telefone[15];
 }TCliente;
 
-void imprimirCliente(TCliente cliente);
-
-
+void imprimirCliente(TCliente *cliente);
 #endif // CLIENTE_H_INCLUDED

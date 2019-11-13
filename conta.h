@@ -1,6 +1,6 @@
 #ifndef CONTA_H_INCLUDED
 #define CONTA_H_INCLUDED
-#include "cliente.h"
+#include "gerenciaClientes.h"
 
 typedef struct Data
 {

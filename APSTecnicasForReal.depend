@@ -19,7 +19,7 @@
 	<stdlib.h>
 	"gerenciaClientes.h"
 
-1573333368 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.c
+1573507432 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.c
 	"banco.h"
 	"gerenciaClientes.h"
 
@@ -28,25 +28,28 @@
 1573082986 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.c
 	"conta.h"
 
-1573321839 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\main.c
+1573603475 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\main.c
 	<stdlib.h>
 	<stdio.h>
 	"banco.h"
+	"cliente.h"
 	"gerenciaClientes.h"
-
-1573081341 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.h
 	"conta.h"
 
-1573082295 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.h
-	"cliente.h"
+1573510538 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\banco.h
+	"conta.h"
 
-1573080796 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\cliente.h
+1573509699 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\conta.h
+	"gerenciaClientes.h"
 
-1573333407 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.h
+1573598685 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\cliente.h
+
+1573601840 c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.h
 	"cliente.h"
 	<locale.h>
+	<stdio.h>
 
-1573232687 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.c
+1573507587 source:c:\users\guilhermesantos\documents\faculdadeprojetos\apstecnicasforreal\apstecnicasforreal\gerenciaclientes.c
 	"gerenciaClientes.h"
 	<stdio.h>
 	<string.h>

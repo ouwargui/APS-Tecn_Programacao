@@ -31,6 +31,7 @@ void adicionarCliente(TCliente *cliente){
     strcpy(cliente[totalClientes].telefone, telefoneTemp);
 
     totalClientes++;
+    printf("%i", totalClientes);
     printf("Cliente cadastrado com sucesso!\n\n");
 }
 

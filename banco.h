@@ -2,8 +2,9 @@
 #define BANCO_H_INCLUDED
 #include "conta.h"
 
+
 TConta contas[10];
-static int numeroConta=0;
+int numeroConta=0;
 
 void adicionarConta(TConta *conta);
 char* listarContas();

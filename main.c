@@ -185,7 +185,7 @@ void adicionarConta(TConta *conta){
     fflush(stdin);
 
     conta[numeroConta].cliente = clientes[numTemp];
-    conta[numeroConta].saldo = 1000;
+    conta[numeroConta].saldo = 0;
     conta[numeroConta].ativa = 1;
     numeroConta++;
 }
@@ -238,7 +238,7 @@ int removerConta(int numero){
     int remover = 0, i = 0;
     printf("Insira o numero da conta que desja excluir \n");
     scanf("%i", &numero);
-        if (contas[numeroConta].saldo == 0);{
+        if(contas[numero].saldo == 0);{
             for(int b = numero;b < totalClientes; b++){
                 clientes[b] = clientes[b + 1];
                 i--;
@@ -246,9 +246,7 @@ int removerConta(int numero){
                 break;
             }
         }
-        /*else{
-            printf("Para remover uma conta é necessário que ela esteja com o saldo zerado!\n");
-        }*/
+
 
         return remover;
         }

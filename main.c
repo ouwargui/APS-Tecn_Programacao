@@ -3,6 +3,7 @@
 #include "banco.h"
 #include "gerenciaClientes.h"
 
+//OI JULIA SOU EU O GUILHERME CARAIIIIIII ALEK PARA DE RIR PORRA
 
 void menuPrincipal(){
     printf("=== Menu do Banco ===\n");

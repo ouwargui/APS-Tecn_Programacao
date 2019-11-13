@@ -28,7 +28,6 @@ int main(){
 
         switch(escolha){
             case 1:
-                printf("\n%i\n", totalClientes);
                 adicionarCliente(&clientes[totalClientes]);
                 listarClientes();
                 printf("\n");
@@ -99,9 +98,6 @@ void adicionarCliente(TCliente *cliente){
 
     fflush(stdin);
     printf("Cliente cadastrado com sucesso!\n\n");
-    printf("nome: %s \n", cliente[totalClientes].nome);
-    printf("CPF: %s \n", cliente[totalClientes].cpf);
-    printf("Telefone: %s \n", cliente[totalClientes].telefone);
     totalClientes++;
 }
 
@@ -121,12 +117,12 @@ char* listarClientes(){
     if(totalClientes == 0){
         printf("Não existem clientes cadastrados.\n\n");
     }else{
-        for(int a = 0; a < 10; a++){
-            printf("%i", totalClientes);
+        for(int a = 0; a < totalClientes; a++){
+            printf("======== %i ========\n", (a + 1));
             printf("nome: %s \n", clientes[a].nome);
             printf("CPF: %s \n", clientes[a].cpf);
             printf("Telefone: %s \n", clientes[a].telefone);
-            printf("=================\n");
+            printf("===================\n");
         }
     }
     return clientes;
